@@ -1,4 +1,18 @@
 DevOps
 ======
 
-TODO
+
+Continous Integration
+------------------
+
+
+Infrastructure
+-----------------
+
+
+Tools
+-----------------
+
+
+Scaling
+-----------------
