@@ -26,5 +26,3 @@ Process
    documentation
    tools
    resources
-
-.. include:: contents.rst.inc

@@ -10,3 +10,5 @@ Welcome to RST Python Developer Guide's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+
+.. include:: contents.rst.inc
