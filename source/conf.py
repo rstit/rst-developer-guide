@@ -93,6 +93,16 @@ html_theme = 'alabaster'
 html_theme_options = {
     'logo': 'rst-logo.png',
     'description': 'RST Python Dev Guide',
+    'github_user': 'rstit',
+    'github_repo': 'rst-developer-guide',
+    'github_button': True,
+    'github_type': 'watch',
+    'pre_bg': '#FFF6E5',
+    'note_bg': '#E5ECD1',
+    'note_border': '#BFCF8C',
+    'body_text': '#482C0A',
+    'sidebar_text': '#49443E',
+    'sidebar_header': '#4B4032',
 }
 
 # Add any paths that contain custom static files (such as style sheets) here,
