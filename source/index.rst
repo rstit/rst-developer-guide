@@ -14,7 +14,15 @@ Welcome to RST Python Developer Guide's documentation!
 
 Indices and tables
 ==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
+   intro
+   agile
+   design-architecture
+   modeling
+   python
+   python-libraries
+   testing
+   documentation
+   tools
+   devops
+   open-source
+   resources
