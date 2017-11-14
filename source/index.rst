@@ -9,18 +9,4 @@ Welcome to RST Python Developer Guide's documentation!
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
-   intro
-   agile
-   design-architecture
-   intro
-   agile
-   design-architecture
-   modeling
-   python
-   python-libraries
-   testing
-   documentation
-   tools
-   devops
-   open-source
-   resources
+
