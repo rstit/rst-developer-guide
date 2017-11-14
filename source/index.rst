@@ -14,15 +14,19 @@ Welcome to RST Python Developer Guide
 
 Indices and tables
 ==================
-   intro
-   agile
-   design-architecture
-   modeling
-   python
-   python-libraries
-   testing
-   documentation
-   tools
-   devops
-   open-source
-   resources
+
+* :ref:intro
+* :ref:agile
+* :ref:design-architecture
+* :ref:intro
+* :ref:agile
+* :ref:design-architecture
+* :ref:modeling
+* :ref:python
+* :ref:python-libraries
+* :ref:testing
+* :ref:documentation
+* :ref:tools
+* :ref:devops
+* :ref:open-source
+* :ref:resources
