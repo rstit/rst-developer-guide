@@ -91,7 +91,7 @@ html_theme = 'alabaster'
 # documentation.
 #
 html_theme_options = {
-    'logo': 'sticker-wtd-colors.png',
+    'logo': 'logo.png',
     'logo_name': True,
     'description': 'RST Python Dev Guide',
     'github_user': 'rstit',
@@ -118,6 +118,7 @@ html_static_path = ['_static']
 # refs: http://alabaster.readthedocs.io/en/latest/installation.html#sidebars
 html_sidebars = {
     '**': [
+        'about.html',
         'relations.html',  # needs 'show_related': True theme option to display
         'searchbox.html',
     ]
