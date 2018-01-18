@@ -12,19 +12,6 @@ About RST Software House
 We are software house from Wroclaw we build online systems & we love to help startups. We create user-friendly web & mobile applications using best programming practices.
 
 
-Our open source projects
-~~~~~~~~~~~~~~~~~~~~~~~~
-
-We are the main developers of the following open source projects:
-
-- SQLXerion (not packaged yet)
-- Flask-AdminLogin (not packaged yet)
-- Flask-FileAlchemy (not packaged yet)
-- `Flask-ImageAlchemy <https://github.com/rstit/flask-image-alchemy>`_
-- `Flask-PyFCM <https://github.com/rstit/flask-pyfcm>`_
-- `Flask-Airbrake <https://github.com/rstit/flask-airbrake>`_
-
-
 tldr
 ----------
 
