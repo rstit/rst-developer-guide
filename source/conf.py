@@ -92,8 +92,8 @@ html_theme = 'alabaster'
 #
 html_theme_options = {
     'logo': 'logo.png',
-    'logo_name': True,
-    'description': 'RST Python Dev Guide',
+    'logo_name': False,
+    'description': 'RST Software House Python Developer Guide',
     'github_user': 'rstit',
     'github_repo': 'rst-developer-guide',
     'github_button': True,
@@ -119,6 +119,7 @@ html_static_path = ['_static']
 html_sidebars = {
     '**': [
         'about.html',
+        'navigation.html',
         'relations.html',  # needs 'show_related': True theme option to display
         'searchbox.html',
     ]
