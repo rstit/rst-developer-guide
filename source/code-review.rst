@@ -4,6 +4,20 @@ Code Review
 
 Before you create PR
 -----------------
+make sure:
+
+- acceptance criteria from task are met
+- you wrote automated tests and they pass
+- remove unnecessary debugging code
+- you assigned at least 2 persons as reviewers to your PR
+- code meets guidelines
+
+If you are a reviewer:
+
+- Do code reviews as soon as possible. Of course your tasks have higher priority, but put yourself in another person’s place - you want to create a PR and get reviewed.
+- Check code according to the following guides.
+- Click “Approve” when you accept changes.
+
 Basics
 -----------------
 - Identify places which were over-engineered.
@@ -21,7 +35,8 @@ When your code is reviewed:
 -----------------
 - Don't take it personally. It’s a review of the code, not you.
 - Try to understand the reviewer's perspective
-- Try to respond to every comment - this means that every comment from a reviewer should result in a response or a code change.
+- You should respond to almost every comment - this means that every comment from a reviewer should result in a response or a code change.
+- Can merge if you have at least two accepts and all comments and discussions are exhausted.
 
 When you review someone’s code
 -----------------
