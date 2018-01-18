@@ -18,6 +18,7 @@ Table of Content
    intro
    principles
    style
+   code-review
    refactor
    design-architecture
    modeling
