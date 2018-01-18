@@ -14,16 +14,24 @@ The folks at LosTechies.com have created a series of Creative Commons-licenced p
 Single Responsibility Principle
 ~~~~~~~~~~
 
-.. image:: solid/sr.jpg
+.. image:: _static/solid/sr.jpg
 
 Open-Closed Principle
 ~~~~~~~~~~
 
+.. image:: _static/solid/oc.jpg
+
 Liskov Substitution Principle
 ~~~~~~~~~~
+
+.. image:: _static/solid/ls.jpg
 
 Interface Segregation Principle
 ~~~~~~~~~~
 
+.. image:: _static/solid/is.jpg
+
 Dependency Inversion Principle
 ~~~~~~~~~~
+
+.. image:: _static/solid/di.jpg
