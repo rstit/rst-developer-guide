@@ -91,7 +91,7 @@ html_theme = 'alabaster'
 # documentation.
 #
 html_theme_options = {
-    'logo': 'logo.png',
+    'index_logo': 'rst-developer-guide-logo.png',
     'logo_name': True,
     'description': 'RST Python Dev Guide',
     'github_user': 'rstit',
