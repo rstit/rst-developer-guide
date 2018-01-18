@@ -5,7 +5,14 @@ Idea
 ---------------------------------
 Agile Manifesto
 ~~~~~~~~~~~~~~
-TODO.
+
+- Individuals and interactions over processes and tools
+- Working software over comprehensive documentation
+- Customer collaboration over contract negotiation
+- Responding to change over following a plan
+
+
+http://agilemanifesto.org/
 
 Prioritizing and scheduling tasks 
 ---------------------------------
@@ -32,7 +39,7 @@ Tools
 
 TODO
 For open source project we should use github's issue page
-For private project we use Jiira
+For private project we use Jirra
 
 
 Git
