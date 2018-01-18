@@ -59,3 +59,29 @@ tldr
   We use docker for CI and deployment configuration. Read DevOps chapter for more information
 
 
+
+Table of Content
+------------
+
+
+.. toctree::
+   :maxdepth: 2
+
+   intro
+   principles
+   style
+   code-review
+   refactor
+   design-architecture
+   modeling
+   python
+   python-libraries
+   testing
+   devops
+   open-source
+   agile
+   documentation
+   tools
+   resources
+
+
