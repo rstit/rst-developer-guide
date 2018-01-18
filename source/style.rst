@@ -1,7 +1,7 @@
 Style
 ======
 
-General
+Rules
 ----------
 
 - Each project must have a [flake8](https://pypi.python.org/pypi/flake8) linter.
@@ -19,7 +19,12 @@ General
   ```
 - Don't use single letter variable names, unless within a list comprehension.
 - Never put any code in the `__init__.py` of a module (except namespace stitching imports).
-
+- Use Python idioms.
+- Avoid redundant labeling.
+- Do not use one letter statements.
+- Prefer reverse notation.
+- Sort and divide import statements.
+- Do not comment.
 
 Usefull tools
 -----------------
