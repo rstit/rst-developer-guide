@@ -16,6 +16,7 @@ Blogs
 - http://blog.cleancoder.com/ by Robert C. Martin (Uncle Bob)
 - http://lucumr.pocoo.org/ by Armin Ronacher (Flask)
 - https://emacsway.github.io by Ivan Zakrevskyi (XP and DDD expert)
+- https://www.joelonsoftware.com by Joel Spolsky (Stack Overflow CEO)
 
 Articles
 - http://www.ballofcode.com/python/domain-driven-design/2013/12/22/exploring-domains-with-python
