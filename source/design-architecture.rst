@@ -10,9 +10,8 @@ Coupling
 Coupling is the degree of interdependence between software modules.
 All project should be loosely coupled. To do this you follow SOLID principles and useone of above clean architecture examples.
 
-Tight Coupling
+Tight Coupling symptoms
 ~~~~~~~~~~~~~~~~~~
-symptoms
 - fat controllers
 - fat models
 - hard to test
@@ -30,6 +29,8 @@ Domain Driven Design Architecture List
 Layered Structure
 ~~~~~~~~~~~~~~~~~~
 In DDD approach project should be layered to at least 3 parts.
+
+
 - Application (glue code)
 - Domain (Business Logic)
 - Framework (Framework related Interfaces, all can be used as Open Source)
