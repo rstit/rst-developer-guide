@@ -51,6 +51,7 @@ Common Project Structure
 ~~~~~~~~~~~~~~~~~~
 
 Framework layer
+~~~~~~~~~~~~~~~~~~
 - utils.py
 - commons.py
 - generics.py
@@ -59,6 +60,7 @@ Framework layer
 - adapters.py
 
 Domain Layer
+~~~~~~~~~~~~~~~~~~
 - services.py
 - schemas.py
 - models.py
@@ -67,6 +69,7 @@ Domain Layer
 - exceptions.py
 
 Application Layer
+~~~~~~~~~~~~~~~~~~
 - views.py
 - routes.py
 - exceptions.py
