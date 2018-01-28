@@ -3,13 +3,13 @@ Principles
 
 In short, where this principles actually pay off:
 
-Readability — Having simple objects defined based on what they do make our life a lot easier coming back to the code we wrote months ago.
-Testability — Since the signatures of the objects are well-defined and very much contained, creating unit and integration tests is super straightforward and fast.
-Robustness — Simple objects allow you to focus on the specificities of each task individually and reduces the amount of input/output variables you need to consider at any given time. Thus making the whole process less error-prone.
-Onboarding — This approach has proven itself very helpful when handing down knowledge as the thought process is like a standard line protocol instead of a wibbly wobbly mix of instructions.
-Caching Layers — For scaling scenarios, you can cache objects using solutions such as Redis just by adding 2/3 lines of code to an object. As such you don't need interfere with the rest of the codebase.
-Reusability — Given all the examples we've seen, I think this speaks for itself.
-Less Issues — Considerably reduces cyclomatic complexity, hence, reducing the amount of defects
+- Readability — Having simple objects defined based on what they do make our life a lot easier coming back to the code we wrote months ago.
+- Testability — Since the signatures of the objects are well-defined and very much contained, creating unit and integration tests is super straightforward and fast.
+- Robustness — Simple objects allow you to focus on the specificities of each task individually and reduces the amount of input/output variables you need to consider at any given time. Thus making the whole process less error-prone.
+- Onboarding — This approach has proven itself very helpful when handing down knowledge as the thought process is like a standard line protocol instead of a wibbly wobbly mix of instructions.
+- Caching Layers — For scaling scenarios, you can cache objects using solutions such as Redis just by adding 2/3 lines of code to an object. As such you don't need interfere with the rest of the codebase.
+- Reusability — Given all the examples we've seen, I think this speaks for itself.
+- Less Issues — Considerably reduces cyclomatic complexity, hence, reducing the amount of defects
 
 
 Single Responsibility Principle
