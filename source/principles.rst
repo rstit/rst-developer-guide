@@ -71,7 +71,7 @@ example::
             return total
 .. image:: _static/solid/oc.jpg
 
-after refactor::
+after refactor You can see that it will be easy to extend the functionality::
 
     from abc import ABCMeta, abstractproperty
 
