@@ -77,3 +77,17 @@ Example with Global State Problem, Implicit Dependency Problem and Concrete API:
             SMSNotifier.send_sms(car_wash_job)
 
 .. image:: _static/solid/di.jpg
+
+
+After refactor::
+
+    class CarWashService:
+        def __init__(self, notifier, repository):
+            self.repository = repository
+            self.notifier = notifier
+
+        def __call__(self, car_id, customer_id):
+            car_wash_job = CarWashJob(car_id, customer_id)
+            self.repository.put(car_wash_job)
+            self.notifier.job_completed(car_wash_job)
+
