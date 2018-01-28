@@ -47,7 +47,62 @@ After refactor::
 Open-Closed Principle
 -------
 
+example::
+
+    class Rectangle(object):
+
+        def __init__(self, width, height):
+            self.width = width
+            self.height = height
+
+    class AreaCalculator(object):
+
+        def __init__(self, shapes):
+
+            assert isinstance(shapes, list), "`shapes` should be of type `list`."
+            self.shapes = shapes
+
+        @property
+        def total_area(self):
+            total = 0
+            for shape in self.shapes:
+                total += shape.width * shape.height
+
+            return total
 .. image:: _static/solid/oc.jpg
+
+after refactor::
+
+    from abc import ABCMeta, abstractproperty
+
+    class Shape(object):
+        __metaclass__ = ABCMeta
+
+        @abstractproperty
+        def area(self):
+            pass
+
+    class Rectangle(Shape):
+
+        def __init__(self, width, height):
+            self.width = width
+            self.height = height
+
+        @property
+        def area(self):
+            return self.width * self.height
+
+    class AreaCalculator(object):
+
+        def __init__(self, shapes):
+            self.shapes = shapes
+
+        @property
+        def total_area(self):
+            total = 0
+            for shape in self.shapes:
+                total += shape.area
+            return total
 
 Liskov Substitution Principle
 -------
