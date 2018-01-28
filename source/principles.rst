@@ -14,19 +14,20 @@ The folks at LosTechies.com have created a series of Creative Commons-licenced p
 Single Responsibility Principle
 ~~~~~~~~~~
 
-```python
-class CarWashService:
-    def __init__(self, sms_sender):
-        self.sms_sender = sms_sender
+.. code-block:: python
+    class CarWashService:
+        def __init__(self, sms_sender):
+            self.sms_sender = sms_sender
 
-    def __call__(self, card_id, customer_id):
-        car = Car.objects.get(id=card_id)
-        customer = Customer.objects.get(customer_id)
-        if car.wash_required:
-            car.washed = True
-            car.washed_at = utcnow()
-            self.sms_sender.send(mobile_phone=customer.phone, text=f"Car %{car.plate} whashed.")
-```
+        def __call__(self, card_id, customer_id):
+            car = Car.objects.get(id=card_id)
+            customer = Customer.objects.get(customer_id)
+            if car.wash_required:
+                car.washed = True
+                car.washed_at = utcnow()
+                self.sms_sender.send(mobile_phone=customer.phone, text=f"Car %{car.plate} whashed.")
+
+
 .. image:: _static/solid/sr.jpg
 
 Open-Closed Principle
