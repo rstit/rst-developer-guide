@@ -61,4 +61,18 @@ Interface Segregation Principle
 Dependency Inversion Principle
 ~~~~~~~~~~
 
+``Depend of abstractions. Do not depend upon concretion.``
+
+
+Example with Global State Problem, Implicit Dependency Problem and Concrete API::
+
+class CarWashService:
+    def __init__(self, repository):
+        self.repository = repository
+
+    def __call__(self, car_id, customer_ids):
+        car_wash_job = CarWashJob(car_id, customer_id)
+        self.repository.put(car_wash_job)
+        SMSNotifier.send_sms(car_wash_job)
+
 .. image:: _static/solid/di.jpg
