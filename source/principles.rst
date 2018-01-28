@@ -69,6 +69,12 @@ example::
                 total += shape.width * shape.height
 
             return total
+
+    def main():
+        shapes = [Rectangle(2, 3), Rectangle(1, 6)]
+        calculator = AreaCalculator(shapes)
+        print(calculator.total_area)
+
 .. image:: _static/solid/oc.jpg
 
 after refactor You can see that it will be easy to extend the functionality::
@@ -103,6 +109,12 @@ after refactor You can see that it will be easy to extend the functionality::
             for shape in self.shapes:
                 total += shape.area
             return total
+
+    def main():
+        shapes = [Rectangle(1, 6), Rectangle(2, 3)]
+        calculator = AreaCalculator(shapes)
+
+        print(calculator.total_area)
 
 Liskov Substitution Principle
 -------
