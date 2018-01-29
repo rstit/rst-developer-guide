@@ -58,17 +58,15 @@ Table of Content
    principles
    style
    code-review
-   refactor
    design-architecture
-   modeling
-   python
-   python-libraries
-   testing
-   devops
    open-source
    agile
-   documentation
-   tools
    resources
+   python-libraries
+   documentation
+   refactor
+   modeling
+   testing
+   devops
 
 
