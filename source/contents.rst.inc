@@ -61,8 +61,8 @@ Table of Content
    design-architecture
    open-source
    agile
-   resources
    python-libraries
+   resources
    documentation
    refactor
    modeling
