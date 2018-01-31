@@ -107,8 +107,55 @@ Python Docstring
 All domain classes should have docstring for class definition. We should create them also
 for complex classes and functions that will be used in other places.
 
+example::
+
+    class CarWashService:
+        """
+        This class describe how to wash a car.
+        Service performs advanced and complex actions to wash the customer's car.
+        Require repository that could be injected using Dependency Injection.
+        After all, calls the function responsible for notifications.
+        """
+        def __init__(self, repository, notifier):
+            self.repository = repository
+            self.notifier = notifier
+
+        def __call__(self, car_id, customer_id):
+            car = self.repository.get_car(car_id)
+            customer = self.repository.get_customer(customer_id)
+            if car.wash_required:
+                car.washed = True
+                car.washed_at = utcnow()
+                self.notifier.wash_completed(customer.phone, car.plate)
+            return car
 
 Python Type Annotations
 -----------------
 If there is such a possibility, we should use it wherever possible. This will allow showing
 explicitly what we expect and what will be returned.
+
+example::
+
+    class CarWashService:
+        """
+        This class describe how to wash a car.
+        Service performs advanced and complex actions to wash the customer's car.
+        Require repository that could be injected using Dependency Injection.
+        """
+        def __init__(self, repository: MongoRepository, notifier: SMSNotifier) -> None:
+            self.repository = repository
+            self.notifier = notifier
+
+        def __call__(self, car_id: int, customer_id: int) -> Car:
+            """
+            :param car_id:              Unique Identifier of a Car
+            :param customer_id:         Unique Identigier of a Customer
+            :return:
+            """
+            car = self.repository.get_car(car_id)
+            customer = self.repository.get_customer(customer_id)
+            if car.wash_required:
+                car.washed = True
+                car.washed_at = utcnow()
+                self.notifier.wash_completed(customer.phone, car.plate)
+            return car
