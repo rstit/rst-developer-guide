@@ -182,7 +182,8 @@ After refactor::
 
 Interface Segregation Principle
 -------
- Example::
+
+.. code-block::python
 
     class APIView:
         def get(self, id):
