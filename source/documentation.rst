@@ -73,7 +73,7 @@ Docstring
 All domain classes should have docstring for class definition. We should create them also
 for complex classes and functions that will be used in other places.
 
-example::
+.. code-block:: python
 
     class CarWashService:
         """
