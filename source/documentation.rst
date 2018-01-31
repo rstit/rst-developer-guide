@@ -107,26 +107,26 @@ explicitly what we expect and what will be returned.
 
 .. code-block:: python
 
-class CarWashService:
-    """
-    This class describe how to wash a car.
-    Service performs advanced and complex actions to wash the customer's car.
-    Require repository that could be injected using Dependency Injection.
-    """
-    def __init__(self, repository: MongoRepository, notifier: SMSNotifier) -> None:
-        self.repository = repository
-        self.notifier = notifier
+    class CarWashService:
+        """
+        This class describe how to wash a car.
+        Service performs advanced and complex actions to wash the customer's car.
+        Require repository that could be injected using Dependency Injection.
+        """
+        def __init__(self, repository: MongoRepository, notifier: SMSNotifier) -> None:
+            self.repository = repository
+            self.notifier = notifier
 
-    def __call__(self, car_id: int, customer_id: int) -> Car:
-        """
-        :param car_id:              Unique Identifier of a Car
-        :param customer_id:         Unique Identigier of a Customer
-        :return:
-        """
-        car = self.repository.get_car(car_id)
-        customer = self.repository.get_customer(customer_id)
-        if car.wash_required:
-            car.washed = True
-            car.washed_at = utcnow()
-            self.notifier.wash_completed(customer.phone, car.plate)
-        return car
+        def __call__(self, car_id: int, customer_id: int) -> Car:
+            """
+            :param car_id:              Unique Identifier of a Car
+            :param customer_id:         Unique Identigier of a Customer
+            :return:
+            """
+            car = self.repository.get_car(car_id)
+            customer = self.repository.get_customer(customer_id)
+            if car.wash_required:
+                car.washed = True
+                car.washed_at = utcnow()
+                self.notifier.wash_completed(customer.phone, car.plate)
+            return car
