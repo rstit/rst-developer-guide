@@ -6,9 +6,6 @@ Little Zen for Code Style
 
 Barry Warsaw, one of the core Python developers, once said that it frustrated him that "The Zen of Python" ([PEP 20][pep20]) is used as a style guide for Python code, since it was originally written as a poem about Python's **internal** design. That is, the design of the language and language implementation itself. One can acknowledge that, but a few of the lines from PEP 20 serve as pretty good guidelines for idiomatic Python code, so we'll just go with it.
 
-[pep20]:  https://www.python.org/dev/peps/pep-0020/
-[pocoo-naming]: http://www.pocoo.org/internal/styleguide/#naming-conventions
-
 Beautiful is better than ugly
 ~~~~~~~~~~~
 This one is subjective, but what it usually amounts to is this: will the person who inherits this code from you be impressed or disappointed? What if that person is you, three years later?
@@ -43,29 +40,18 @@ OK, we took liberty on this one -- in "The Zen of Python", it's actually "namesp
 But seriously: beautiful code without tests is simply worse than even the ugliest tested code. At least the ugly code can be refactored to be beautiful, but the beautiful code can't be refactored to be verifiably correct, at least not without writing the tests! So, write tests! Please!
 
 
-Rules
+Strict Rules
 ----------
-
-- Each project must have a [flake8](https://pypi.python.org/pypi/flake8) linter.
-- Each project must follow [PEP8](https://www.python.org/dev/peps/pep-0008/) (inc. 79 chars limit).
-- Docstrings must follow PEP257 (https://www.python.org/dev/peps/pep-0257/).
-- Functions with more than 1 parameter must [force keyword arguments](https://www.python.org/dev/peps/pep-3102/).
-- All class `__init__` methods must [force keyword arguments](https://www.python.org/dev/peps/pep-3102/).
-- Follow Python [EAFP principal](http://python.net/~goodger/projects/pycon/2007/idiomatic/handout.html#eafp-vs-lbyl) where possible.
-- Use relative absolute imports within projects, full absolute imports in testing code.
-  ```python
-  # in testing code
-  from project.subpackage import magic_beans
-  # in project code
-  from .sub_package import magic_beans
-  ```
+- Each project must have a flake8 linter.
+- Each project must follow PEP8 (with 99 chars limit).
+- Docstrings must follow PEP257.
+- Do not use wildcard imports.
 - Don't use single letter variable names, unless within a list comprehension.
-- Never put any code in the `__init__.py` of a module (except namespace stitching imports).
 - Use Python idioms.
 - Avoid redundant labeling.
-- Do not use one letter statements.
 - Prefer reverse notation.
 - Sort and divide import statements.
+
 
 Usefull tools
 -----------------

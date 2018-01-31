@@ -17,6 +17,8 @@ Blogs
 - http://lucumr.pocoo.org/ by Armin Ronacher (Flask)
 - https://emacsway.github.io by Ivan Zakrevskyi (XP and DDD expert)
 - https://www.joelonsoftware.com by Joel Spolsky (Stack Overflow CEO)
+- https://rhettinger.wordpress.com by Raymond Hettinger (Python core developer)
+
 
 Articles
 - http://www.ballofcode.com/python/domain-driven-design/2013/12/22/exploring-domains-with-python
@@ -34,6 +36,7 @@ YouTube Videos
 - The Clean Architecture in Python https://www.youtube.com/watch?v=DJtef410XaM
 - Building highly decoupled systems in Python https://www.youtube.com/watch?v=3MEsh44XZDo
 - Clean Architecture in Python (web) apps https://www.youtube.com/watch?v=4X1hNuW7WGo
+- Beyond PEP 8 -- Best practices for beautiful intelligible code https://www.youtube.com/watch?v=wf-BqAjZb8M
 
 YouTube Channels
 -------
@@ -51,16 +54,3 @@ Sample Projects
 - https://github.com/jordifierro/abidria-api
 - https://github.com/MichaelDiBernardo/ddd-flask-example
 - https://github.com/basco-johnkevin/ddd-python-django
-
-
-Conferences
------------
-
-
-User Groups
------------
-
-
-Community Resources
-------------------
-
