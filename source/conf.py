@@ -50,8 +50,8 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = 'RST Python Developer Guide'
-copyright = '2017, Piotr Poteralski'
+project = 'RST-IT Python Developer Guide'
+copyright = '2018, Piotr Poteralski'
 author = 'Piotr Poteralski'
 
 # The version info for the project you're documenting, acts as replacement for
