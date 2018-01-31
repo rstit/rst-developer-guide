@@ -42,17 +42,6 @@ For open source project we should use github's issue page
 For private project we use Jirra
 
 
-Git
----
-
-TODO: review and copy
-
-
-Code reviews
-~~~~~~~~~~~~
-
-TODO: review and copy
-
 Versionning and releasing
 -------------------------
 
@@ -66,4 +55,4 @@ See:
 
 Releasing
 ~~~~~~~~~
-CI
+TODO
