@@ -1,24 +1,114 @@
 Documentation [WIP]
 ======
 
-..
-
-Basics
+README
 -----------------
+A README file at the root directory should give general information to both users and maintainers
+of a project. It should be raw text or written in some very easy to read markup, such as
+reStructuredText or Markdown. It should contain a few lines explaining the purpose of the project
+or library (without assuming the user knows anything about the project), the URL of the main source
+for the software. This file should also have information how to configure and run projects for
+multiple environments (local, prod, testing). This file is the main entry point for readers of
+the code.
 
-plik readme i plik todo
+example file::
 
-        A README file at the root directory should give general information to both users and maintainers of a project. It should be raw text or written in some very easy to read markup, such as reStructuredText or Markdown. It should contain a few lines explaining the purpose of the project or library (without assuming the user knows anything about the project), the URL of the main source for the software, and some basic credit information. This file is the main entry point for readers of the code.
-Apiary
+    # Project Title
+
+    One Paragraph of project description goes here
+
+    ## Getting Started
+
+    These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+    ### Prerequisites
+
+    What things you need to install the software and how to install them
+
+    ```
+    Give examples
+    ```
+
+    ### Installing
+
+    A step by step series of examples that tell you have to get a development env running
+
+    Say what the step will be
+
+    ```
+    Give the example
+    ```
+
+    And repeat
+
+    ```
+    until finished
+    ```
+
+    End with an example of getting some data out of the system or using it for a little demo
+
+    ## Running the tests
+
+    Explain how to run the automated tests for this system
+
+    ### Break down into end to end tests
+
+    Explain what these tests test and why
+
+    ```
+    Give an example
+    ```
+
+    ### And coding style tests
+
+    Explain what these tests test and why
+
+    ```
+    Give an example
+    ```
+
+    ## Deployment
+
+    Add additional notes about how to deploy this on a live system
+
+
+API specification
 ------------------
-Powinnismy tworzyc rownolegle dokumentacje api blueprint
-mozna uzyc narzedzia do testowania
+All backend project should have documented endpoints in apiary.apib file. With this blueprint file
+you can already get a mock, documentation and test for your API. This file describe File should be always and up-to-date. Apiary ensures
+
+example file::
+
+    FORMAT: 1A
+
+    # The Simplest API
+    This is one of the simplest APIs written in the **API Blueprint**.
+
+    ### List All Questions [GET]
+    + Response 200 (application/json)
+
+        + Attributes (array[Question])
+
+    ## Data Structures
+
+    ### Question
+    + question: Favourite programming language? (required)
+    + published_at: `2014-11-11T08:40:51.620Z` (required)
+    + url: /questions/1 (required)
+    + choices (array[Choice], required)
+
+    ### Choice
+    + choice: Javascript (required)
+    + url: /questions/1/choices/1 (required)
+    + votes: 2048 (number, required)
 
 Python Docstring
 -----------------
+All domain classes should have docstring for class definition. We should create them also
+for complex classes and functions that will be used in other places.
 
-Powinnismy uzywac dla zlozonych klas i funkcji ktore maja byc uzywane w wielu meijscach
 
-Python Typing
+Python Type Annotations
 -----------------
-Jesli dostepne to nalezy uzywac aby explicit pokazywac nad czym pracujemy i co zwracamy
+If there is such a possibility, we should use it wherever possible. This will allow showing
+explicitly what we expect and what will be returned.
