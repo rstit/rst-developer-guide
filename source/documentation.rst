@@ -1,7 +1,7 @@
-Documentation [WIP]
+Documentation
 ======
 
-README
+Readme
 -----------------
 A README file at the root directory should give general information to both users and maintainers
 of a project. It should be raw text or written in some very easy to read markup, such as
@@ -68,7 +68,7 @@ example file::
     + url: /questions/1/choices/1 (required)
     + votes: 2048 (number, required)
 
-Python Docstring
+Docstring
 -----------------
 All domain classes should have docstring for class definition. We should create them also
 for complex classes and functions that will be used in other places.
@@ -95,7 +95,7 @@ example::
                 self.notifier.wash_completed(customer.phone, car.plate)
             return car
 
-Python Type Annotations
+Type Hint
 -----------------
 If there is such a possibility, we should use it wherever possible. This will allow showing
 explicitly what we expect and what will be returned.
